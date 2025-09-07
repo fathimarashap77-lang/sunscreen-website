@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunscreen Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-yellow-500 to-white-600 text-black text-center py-10">
+    <div class="text-5xl">☀️</div>
+    <h1 class="text-4xl font-bold">Complete Sunscreen Guide</h1>
+    <p>Protect your skin with the right knowledge</p>
+  </header>
+  
+  
+    <h2 class="text-2xl font-bold text-center mb-6">Sunscreen</h2>
+         <h3 class="text-2xl font-bold text-center mb-6">Sunscreen is one of the most important steps in skincare because it protects our skin from the harmful effects of the sun’s ultraviolet (UV) rays. Daily use of sunscreen helps prevent sunburn, premature aging like wrinkles and dark spots, and even serious problems such as skin cancer. It works by either absorbing or reflecting UV rays before they can damage the skin. Dermatologists recommend using a broad-spectrum sunscreen with at least SPF 30 and reapplying it every two hours when outdoors. Choosing the right sunscreen for your skin type—gel-based for oily skin, hydrating creams for dry skin, and gentle, fragrance-free formulas for sensitive skin—ensures comfort and effectiveness. Applying sunscreen regularly, even on cloudy days, keeps the skin healthy, youthful, and well-protected.</h3>
+
+
+  <!-- Why Important -->
+  <section class="py-10">
+
+    <h1 class="text-2xl font-bold text-center mb-6">Why Sunscreen is Essential</h1>
+    <div class="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto px-4 text-center">
+      <div class="bg-red-50 p-4 rounded">
+        <img src="skincancer.png" alt="Sunscreen" class="mx-auto h-28 object-contain">
+        <b>Prevents Cancer</b><p>Reduces melanoma risk</p>
+      </div>
+      <div class="bg-blue-50 p-4 rounded">
+        <img src="anti aging.png" alt="Sunscreen" class="mx-auto h-28 object-contain">
+        <b>Anti-Aging</b><p>Prevents wrinkles</p>
+      </div>
+      <div class="bg-green-50 p-4 rounded">
+        <img src="evenskin.png" alt="Sunscreen" class="mx-auto h-28 object-contain">
+        <b>Even Skin Tone</b><p>Stops dark spots</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Apply -->
+  <section class="py-10 bg-gray-50">
+    <h1 class="text-2xl font-bold text-center mb-6">How to Apply</h1>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto px-4">
+      <div class="bg-white p-4 rounded shadow">
+        <b>Steps</b>
+        <ol class="list-decimal list-inside text-sm mt-2 space-y-1">
+          <li><b>Apply 15-30 min before sun</b></li>
+          <li><b>Use 2 tablespoons for body</b></li>
+          <li><b>Cover all exposed skin</b></li>
+          <li><b>Reapply every 2 hours</b></li>
+        </ol>
+      </div>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <b>Don’t Forget</b>
+        <div class="grid grid-cols-4 gap-2 mt-2 text-sm">
+          <div><img src="ear.png" class="h-20 mx-auto"><p>Ears</p></div>
+          <div><img src="nose.png" class="h-20 mx-auto"><p>Nose</p></div>
+          <div><img src="lips.png" class="h-20 mx-auto"><p>Lips</p></div>
+          <div><img src="feet.png" class="h-20 mx-auto"><p>Feet</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types -->
+  <section class="py-10">
+    <h2 class="text-2xl font-bold text-center mb-6">Sunscreen Types</h2>
+    <div class="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto px-4 text-center text-sm">
+      <div class="bg-blue-50 p-4 rounded"><img src="gel.png" class="h-24 mx-auto"><b>Gel</b><p>For oily, acne-prone, and combination skin types</p></div>
+      <div class="bg-green-50 p-4 rounded"><img src="cream.png" class="h-24 mx-auto"><b>Cream</b><p>For normal, dry, or sensitive skin types</p></div>
+      <div class="bg-purple-50 p-4 rounded"><img src="stick.png" class="h-24 mx-auto"><b>Stick</b><p>For face/lips</p></div>
+      <div class="bg-orange-50 p-4 rounded"><img src="spray.png" class="h-24 mx-auto"><b>Spray</b><p>easy application on large areas of the body</p></div>
+      <div class="bg-pink-50 p-4 rounded"><img src="serum.png" class="h-24 mx-auto"><b>serum</b><p>For all skin types</p></div>
+       <div class="bg-yellow-50 p-4 rounded"><img src="powder.png" class="h-24 mx-auto"><b>powder</b><p>For reapplication over makeup</p></div>
+       <div class="bg-brown-50 p-4 rounded"><img src="tinted.png" class="h-24 mx-auto"><b>tinted sunscreen</b><p>For dry, oily, sensitive, acne-prone, and mature skin</p></div>
+    </div>
+  </section>
+
+  <!-- Skin Type -->
+  <section class="py-10 bg-gray-50">
+    <h2 class="text-2xl font-bold text-center mb-6">Find Your Perfect Match</h2>
+    <div class="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto px-4">
+      <div class="p-4 border rounded cursor-pointer hover:border-blue-500 text-center" onclick="showRecs('oily')">🌟<b>Oily</b></div>
+      <div class="p-4 border rounded cursor-pointer hover:border-blue-500 text-center" onclick="showRecs('dry')">🏜️<b>Dry</b></div>
+      <div class="p-4 border rounded cursor-pointer hover:border-blue-500 text-center" onclick="showRecs('combo')">⚖️<b>Combo</b></div>
+      <div class="p-4 border rounded cursor-pointer hover:border-blue-500 text-center" onclick="showRecs('sensitive')">🌸<b>Sensitive</b></div>
+    </div>
+    <div id="recommendations" class="hidden bg-white mt-6 p-4 rounded shadow max-w-4xl mx-auto">
+      <h3 id="rec-title" class="text-lg font-bold text-center mb-3"></h3>
+      <div id="rec-content" class="grid md:grid-cols-3 gap-3 text-sm"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-yellow-500 to white-600 text-black py-6 text-center">
+    ☀️ <b>Daily Protection is Key</b><br>
+    <span>SPF 30+ | Reapply Every 2hrs | Year-Round</span>
+  </footer>
+
+  <script>
+    const products = {
+      oily: [
+        {name:"EltaMD UV Clear", spf:"SPF 46", img:"1.png "},
+        {name:"La Roche-Posay", spf:"SPF 60", img:"2.png"}
+    
+      ],
+      dry: [
+        {name:"CeraVe Hydrating", spf:"SPF 30", img:"3.png"},
+        {name:"Aveeno Hydrate", spf:"SPF 50", img:"4.png"}
+        
+      ],
+      combo: [
+        {name:"Cetaphil Pro", spf:"SPF 30", img:"5.png"},
+        {name:"Olay Daily", spf:"SPF 30", img:"6.png"}
+        
+      ],
+      sensitive: [
+        {name:"Vanicream", spf:"SPF 35", img:"7.png"},
+        {name:"Thinkbaby", spf:"SPF 50+", img:"8.png"}
+        
+      ]
+    };
+    function showRecs(type){
+      const recs = products[type];
+      document.getElementById("rec-title").textContent = `Best for ${type} skin`;
+      document.getElementById("rec-content").innerHTML = recs.map(p=>`
+        <div class="p-3 bg-gray-50 rounded text-center">
+          <img src="${p.img}" alt="${p.name}" class="h-28 mx-auto mb-2 object-contain">
+          <b>${p.name}</b><p>${p.spf}</p>
+        </div>
+      `).join("");
+      document.getElementById("recommendations").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
